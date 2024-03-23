@@ -126,3 +126,81 @@ En este programa le puse harto sazón a los resultados, pero bueno. En este caso
 Luego para continuar con el código hay que deinir variables y etc, etc. 
 
 ### Punto 7 / Operar y Ordenar 5 números cualquiera (*sufrimiento interno*) 
+Este punto del reto contiene internamente unas 7 funciones a definir, lo cual me traen malos recuerdos del Taller 1 que hicimos en grupos. Sin embargo este caso es más fácil ya que aquí no estamos limitados a solo usar condicionales para solucionar este problema, así que adelante.
+```py
+# Funciones
+
+def promedio_5 (a=float,b=float,c=float,d=float,e=float)->float:
+    calculo_promedio= ((a+b+c+d+e)/5)
+    return calculo_promedio
+
+def mediana_5(a=float,b=float,c=float,d=float,e=float)->float:
+    numeros_ordenados=sorted(lista_numeros)
+    n=len(numeros_ordenados)
+    calculo_mediana = n//2
+    return numeros_ordenados[calculo_mediana]
+
+def promedio_multiplicativo_5(a=float,b=float,c=float,d=float,e=float)->float:
+    calculo_promedio_multiplicativo=((a*b*c*d*e)**(1/5))
+    return calculo_promedio_multiplicativo
+
+def ordenados_ascendente_5 (a=float,b=float,c=float,d=float,e=float)->float:
+    ascendente=sorted(lista_numeros)
+    return ascendente
+
+def ordenados_descendente_5 (a=float,b=float,c=float,d=float,e=float)->float:
+    descendente=sorted(lista_numeros, reverse=True)
+    return descendente
+
+def elevado_mayor_al_menor_5(a=float,b=float,c=float,d=float,e=float)->float:
+    mayor_elevado_al_menor= max(lista_numeros)**min(lista_numeros)
+    return mayor_elevado_al_menor
+
+def menor_elevado_3_5 (a=float,b=float,c=float,d=float,e=float)->float:
+    menor_elevado_3= min(lista_numeros)**3
+    return menor_elevado_3
+
+if __name__ == "__main__":
+
+#Definicion de variables
+
+    a=float(input("Ingrese el primer numero: "))
+    b=float(input("Ingrese el segundo numero: "))
+    c=float(input("Ingrese el tercer numero: "))
+    d=float(input("Ingrese el cuarto numero: "))
+    e=float(input("Ingrese el quinto numero: "))
+
+lista_numeros = (a,b,c,d,e)
+
+# Llamado de las funciones y resultados
+
+promedio = promedio_5(a,b,c,d,e)
+print("El valor del promedio es "+str(promedio))
+
+mediana = mediana_5(a,b,c,d,e)
+print("La mediana es "+str(mediana))
+
+promedio_multiplicativo = promedio_multiplicativo_5(a,b,c,d,e)
+print("El valor del promedio multiplicativo es "+str(promedio_multiplicativo))
+
+ordenados_ascendente = ordenados_ascendente_5(a,b,c,d,e)
+print("Ordenados de manera ascendente: "+str(ordenados_ascendente))
+
+ordenados_descendente = ordenados_descendente_5(a,b,c,d,e)
+print("Ordenados de manera descendente: "+str(ordenados_descendente))
+
+mayor_elevado_al_menor = elevado_mayor_al_menor_5(a,b,c,d,e)
+print("La potencia del numero mayor elevado al menor es "+str(mayor_elevado_al_menor)) 
+
+menor_elevado_al_cubo = menor_elevado_3_5(a,b,c,d,e)
+print("El numero menor elevado al cubo es: "+str(menor_elevado_al_cubo))
+```
+Entonces para este punto habia, como ya dije, que definir 7 funciones en total: El promedio, La mediana, El promedio multiplicativo, Ordenar de manera ascendente y descendente, Elevar el numero mayor al menor y elevar numero menor al cubo.
+
+Para lograrlo use medios matematicos (para "el promedio", "promedio multiplicativo", "mayor elevado al menor" y "menor al cubo"), tuve que definir la lista de los numero seleccionados para poder luego organizarlos con la funcion *sorted* y poder sacarle la mediana con la funcion *len()* (fueron usados para "la mediana, "ordenar de manera ascendente" y "ordenar de manera descendente") ,y use las palabras reservadas *max* / *min* para determinar el numero mayor / menor de la lista (para "el numero mayor elevado al menor" y "numero menor al cubo")
+
+### Punto 8 / Crear un archivo independiente de las funciones del punto 7 e importarlas
+En los archivos de este repositorio se encontrara el archivo *inportar.py* que son las funciones del ejercicio 7 para importar.
+
+### Punto 9 / ¿Qué es *pip* en python
+*pip* en python es 
