@@ -202,5 +202,37 @@ Para lograrlo use medios matematicos (para "el promedio", "promedio multiplicati
 ### Punto 8 / Crear un archivo independiente de las funciones del punto 7 e importarlas
 En los archivos de este repositorio se encontrara el archivo *inportar.py* que son las funciones del ejercicio 7 para importar.
 
-### Punto 9 / ¿Qué es *pip* en python
-*pip* en python es 
+### Punto 9 / ¿Qué es *pip* en python?
+*pip* en python es el sistema de gestión de paquetes utilizado para instalar y administrar paquetes de software escritos en Python. Esos paquetes de software son los modulos y librerias las cuales se pueden importar a nuestros archivos gracias a que estan subidos en un nube. Entonces, *pip* da cierta ventaja a la hora de instalar o actualizar paquetes, además de la gestión entre ellos.
+
+Para cada uno de las cosas antes mencionadas que nos permite *pip* hay que ingresar cierto codigo al programa de python, lo cual incluye: Instalación de prgramas, actualización de programas, eleminar paquetes y consultar paquetes instalados.
+
+    1)Instalar un paquete: pip install nombre_del_paquete
+    
+    2)Actualizar un paquete: pip install –upgrade nombre_del_paquete
+    
+    3)Desinstalar un paquete: pip uninstall nombre_del_paquete
+    
+    4)Listar paquetes instalados: pip list
+
+Por esta accesibilidad que le da a los programadores a otros paquetes que les pueden ser necesarios es que se considera que *pip* es algo indispensable para los trabajos y trabajadores de programación que se hacen en python.
+
+Información sacada de: https://abcxperts.com/que-es-pip/ 
+
+### Punto 10 / ¿Cuáles son los paquetes más famosos de *pip*?
+Como ya mencione previamente, para instalar un paquete *pip* lo que hay que hacer es escribir en el código de python *pip install "nombre_del_paquete"*. En "nombre_del_paquete" es donde va, claramente, el nombre de la librería o módulo que queremos incluir en nuestro programa. Los más descargados, es decir, también los más utiles son los siguientes:
+
+    1)Pandas                (Manejo de datos)
+    2)Numpy                 (Operar matrices)
+    3)Plotly                (Imagen y clic)
+    4)Scikit-learn          (Machine Learning en tu mano)
+    5)Category-encoders     (Mejora del Dato)
+    6)Imbalance Learning    (Emparejar los datos)
+    7)LightGBM / XGBoost    (Árboles con potencia)
+    8)Keras / Tensorflow    (Deep Learning en pocas líneas)
+    9)Shap                  (Intepretación de modelos)
+    10)AzureML-sdk          (Implementación ML en la Nube)
+    
+Y como se puede leer cada una tiene una función especifica, así que lo más recomendado sería tener un buen listado de paquetes de *pip* para que tu trabajos se faliciten.
+
+Fuente: https://verneacademy.com/blog/articulos-ia/10-librerias-python-data-science-machine-learning/
